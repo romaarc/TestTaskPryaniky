@@ -5,7 +5,6 @@
 //  Created by Roman Gorshkov on 27.05.2022.
 //
 
-import Foundation
 import UIKit
 
 final class PryanikDetailViewController: BaseViewController {

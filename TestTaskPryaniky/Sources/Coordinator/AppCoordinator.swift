@@ -5,13 +5,11 @@
 //  Created by Roman Gorshkov on 26.05.2022.
 //
 
-import Foundation
 import UIKit
 
 ///Создаю класс AppCoordinator который будет стартовать модуль.
 ///Класс содержит в себе window, AppDependency - зависимость контейнер с сервисами и вьюмоделями
 final class AppCoordinator {
-    
     private let window: UIWindow
     private let appDependency: AppDependency
     private lazy var navigationControllers = AppCoordinator.makeNavigationControllers()
@@ -43,7 +41,6 @@ final class AppCoordinator {
 }
 
 private extension AppCoordinator {
-    
     ///Функция собирает модуль MVVM, добавляя context
     func setupStationVC() {
         guard let navController = self.navigationControllers[.pryaniky] else {
